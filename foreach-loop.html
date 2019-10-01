@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Foreach loop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <script>
+        var languages = ["Javascript", "HTML", "CSS", "Typescript"];
+
+        for (i in languages) {
+            document.write(i + ". " + languages[i] + "<br/>")
+        }
+
+
+        //kita punya array seperti berisi berikut
+        var days = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"];
+
+
+        //kemudian kita ingin tampilakan semua hari
+        //dengan menggunakan method foreach
+
+        days.forEach(function(day) {
+            document.write("<p>" + day + "</p>");
+        })
+    </script>
+
+</body>
+
+</html>
