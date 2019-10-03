@@ -20,6 +20,20 @@
         for (let i = 0; i < products.length; i++) {
             document.write(`<li>${products[i]}`);
         }
+
+        //membuat array
+        var items = ["senter", "radio", "antena", "obeng"];
+
+
+        document.write("<h3>Daftar Produk</h3>");
+        document.write("<ol>");
+
+        //menggunakan perulangan untuk mencetak semua isi array
+
+        items.forEach((data) => {
+            document.write(`<li>${data}</li>`);
+        });
+        document.write("</ol>");
     </script>
 
 </body>
