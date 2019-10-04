@@ -15,7 +15,16 @@
 
     <script>
         var text = document.getElementsByClassName("text");
-        console.log(text);
+        setInterval(function() {
+            text[0].style.color = "red";
+            text[1].style.color = "gold";
+
+            setTimeout(function() {
+                text[0].style.color = "blue";
+                text[1].style.color = "yellow";
+            }, 500)
+
+        }, 1000);
     </script>
 </body>
 
